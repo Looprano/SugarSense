@@ -10,7 +10,7 @@ $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 
 if($count != 0){
-    echo'<p>' . 'id_sensore'."  ".'valore' ." ".'descrizione'. '</p>';
+    echo'id_sensore'."  ".'valore' ." ".'descrizione';
     while ($row=mysqli_fetch_array($query))
     {
         $id = $row['id_sens'];
