@@ -10,5 +10,7 @@ switch($_POST['case'])
     case 'Ricerca per ID':
         header('Location: utente_sensore_id.php');
         break;
+    default:
+        header( 'Utente_sensori.php');
 }
 ?>

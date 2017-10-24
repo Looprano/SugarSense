@@ -16,5 +16,7 @@ switch($_POST['case'])
     case 'logout':
         header('Location:index.php');
         break;
+    default:
+        header( 'iot_menu.php');
 }
 ?>
