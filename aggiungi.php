@@ -2,9 +2,12 @@
 <?php
 
 $conn = mysqli_connect("localhost", "root", "fedeneco123", "company");
-$username = $_POST['Username'];
+$username = (string)$_POST['Username'];
+$username=filter_var($username,FILTER_SANITIZE_STRING);
 $nome = $_POST['Nome'];
+$nome=filter_var($nome,FILTER_SANITIZE_STRING);
 $cognome = $_POST['Cognome'];
+$cognome=filter_var($cognome,FILTER_SANITIZE_STRING);
 $cf= $_POST['Codice_Fiscale'];
 $password = $_POST['Password'];
 
