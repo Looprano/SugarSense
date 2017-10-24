@@ -1,6 +1,5 @@
 
 <?php
-
 $conn = mysqli_connect("localhost", "root", "fedeneco123", "company");
 $username = $_POST['Username'];
 $username = filter_input(INPUT_GET,$username,FILTER_SANITIZE_STRING);
