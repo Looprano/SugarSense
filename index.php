@@ -17,7 +17,7 @@ if(isset($_SESSION['login_user'])){
 
 
 <body background="nature-fields-grass-flower-blur-photography.jpg">
-<h1>SUGARSENSE_2017</h1>
+<h1>SUGARSENSE</h1>
 
 <div id="Login" style="text-align: center">
     <form title="Login" action="login.php" method="post">
