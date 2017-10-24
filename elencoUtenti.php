@@ -10,7 +10,7 @@ $count = mysqli_num_rows($query);
 if($count != 0){
     while ($row=mysqli_fetch_array($query))
     {
-        echo '<p>'.$row['nome']." ".$row['cognome']." ".$row['codicefisc']." ".$row['username']." ".$row['password']." ".$row['type']. '</p>';
+        echo $row['nome']." ".$row['cognome']." ".$row['codicefisc']." ".$row['username']." ".$row['password']." ".$row['type'];
     }
 }else{
     echo 'nessun utente presente';

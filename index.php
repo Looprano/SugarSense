@@ -1,12 +1,11 @@
 
 <?php
 
-include('login.php'); // Includes Login Script
+include'login.php'; // Includes Login Script
 if(isset($_SESSION['login_user'])){
     header("location: profile.php"); // Redirecting To Profile Page
 }
 ?>
-
 <!doctype html>
 <html>
 <head>
@@ -24,7 +23,6 @@ if(isset($_SESSION['login_user'])){
         <input name = "username" type="text" placeholder="Username" class="accesso"><br />
         <input name = "password" type="password" placeholder="Password" class="accesso"><br />
         <input name="submit" type="submit" value=" Login ">
-        <span><?php echo $error; ?></span>
     </form>
 </div>
 
