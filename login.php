@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
                 header("location: iot_menu.php");
             }
             else if ($_SESSION["type"] == 'user'){
-                header("location: Utente_menu.php?username=$username");
+                header("location: Utente_menu.php");
             }
         }
         else {
