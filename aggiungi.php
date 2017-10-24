@@ -2,14 +2,15 @@
 <?php
 
 $conn = mysqli_connect("localhost", "root", "fedeneco123", "company");
-$username = (string)$_POST['Username'];
-$username=filter_var($username,FILTER_SANITIZE_STRING);
-$nome = $_POST['Nome'];
-$nome=filter_var($nome,FILTER_SANITIZE_STRING);
+$username = $_POST['Username'];
+$username = filter_input(INPUT_GET,$username,FILTER_SANITIZE_STRING);
+$nome = trim($_POST['Nome']);
+$nome = filter_input(INPUT_GET,$nome,FILTER_SANITIZE_STRING);
 $cognome = $_POST['Cognome'];
-$cognome=filter_var($cognome,FILTER_SANITIZE_STRING);
-$cf= $_POST['Codice_Fiscale'];
+$cognome = filter_input(INPUT_GET,$cognome,FILTER_SANITIZE_STRING);
+$cf= trim($_POST['Codice_Fiscale']);
 $password = $_POST['Password'];
+
 
 $sql =("SELECT username FROM login WHERE username ='$username'");
 $query = mysqli_query($conn,$sql);
