@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "root", "fedeneco123", "company");
+$conn = mysqli_connect('localhost', 'root', 'fedeneco123', 'company');
 $id_s = addslashes($_POST['id']);
 session_start();
 $user = $_SESSION['username'];
@@ -10,14 +10,14 @@ $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 
 if($count !== 0){
-    echo "id_sensore  valore  descrizione";
+    echo 'id_sensore  valore  descrizione';
     while ($row=mysqli_fetch_array($query))
     {
         $id = $row['id_sens'];
         $valore = $row['valore'];
         $descrizione = $row['descrizione'];
 
-        echo "$id $valore $descrizione";
+        echo '$id $valore $descrizione';
     }
 }else{
     echo 'nessun sensore presente';

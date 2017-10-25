@@ -1,7 +1,7 @@
 
 <?php
 
-$conn = mysqli_connect("localhost", "root", "fedeneco123", "company");
+$conn = mysqli_connect('localhost', 'root', 'fedeneco123', 'company');
 
 $sql =("SELECT nome,cognome,codicefisc,username,type FROM login");
 $query = mysqli_query($conn,$sql);

@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "fedeneco123", "company");
+$conn = mysqli_connect('localhost', 'root', 'fedeneco123', 'company');
 
 $username = addslashes($_POST['Username']);
 $nome =addslashes( $_POST['Nome']);
