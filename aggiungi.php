@@ -17,4 +17,3 @@ if($count == 0){
 }else{
     echo 'Username gia presente';
 }
-?>
