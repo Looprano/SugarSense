@@ -11,13 +11,13 @@ if($count == 1){
 
     while ($row=mysqli_fetch_array($query))
     {
-        $nome = addslashes($row['nome']);
-        $cognome = addslashes($row['cognome']);
-        $codicef = addslashes($row['codicefisc']);
-        $user = addslashes($row['username']);
-        $tipo = addslashes($row['type']);
+        $nome = $row['nome'];
+        $cognome = $row['cognome'];
+        $codicef = $row['codicefisc'];
+        $user = $row['username'];
+        $tipo = $row['type'];
 
-        echo $nome." ".$cognome." ".$codicef." ".$user." ".$tipo." "; }
+        echo $nome," ",$cognome," ",$codicef," ",$user," ",$tipo," "; }
 }else
     {
     echo 'Username non presente';
