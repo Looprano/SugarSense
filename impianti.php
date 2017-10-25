@@ -7,13 +7,13 @@ $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 
 if($count != 0){
-    echo 'id_impianto'."    ".'indirizzo';
+    echo "id_impianto    indirizzo";
     while ($row=mysqli_fetch_array($query))
     {
         $id = $row['id_imp'];
         $indirizzo = $row['indirizzo'];
-        echo $id." ".$indirizzo;
+        echo "$id $indirizzo";
     }
 }else{
-    echo 'nessun impianto presente ';
+    echo "nessun impianto presente";
 }
