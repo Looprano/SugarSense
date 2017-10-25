@@ -11,4 +11,3 @@ if($count === 1){
 }else{
     echo 'Utente non presente';
 }
-?>

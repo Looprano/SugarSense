@@ -19,5 +19,7 @@ if($count !== 0){
         echo $id, $valore ,$descrizione;
     }
 }else{
+
     echo 'nessun sensore presente ';
 }
+

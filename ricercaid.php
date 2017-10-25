@@ -21,3 +21,4 @@ if($count !== 0){
 }else{
     echo 'nessun sensore presente';
 }
+
