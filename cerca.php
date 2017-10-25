@@ -9,7 +9,7 @@ $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 if($count == 1){
 
-    while ($row=mysqli_fetch_array($query))
+    while ($row=addslashes(mysqli_fetch_array($query)))
     {
         $nome = $row['nome'];
         $cognome = $row['cognome'];
