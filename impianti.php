@@ -1,7 +1,7 @@
 <?php
 $conn = mysqli_connect("localhost", "root", "fedeneco123", "company");
 session_start();
-$user = $_SESSION['username'];
+$user = addslashes($_SESSION['username']);
 $sql =("SELECT id_imp, indirizzo from utente_impianti INNER JOIN impianto where utente_impianti.username_utente ='$user' AND utente_impianti.id_imp_utente = impianto.id_imp;");
 $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);

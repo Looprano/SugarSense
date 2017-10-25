@@ -1,7 +1,7 @@
 <?php
 
 $conn = mysqli_connect("localhost", "root", "fedeneco123", "company");
-$id_s = $_POST['id'];
+$id_s = addslashes($_POST['id']);
 session_start();
 $user = $_SESSION['username'];
 $sql =("SELECT sensore.id_sens,valore,descrizione from(sensore INNER JOIN impianti_sensori on sensore.id_sens = impianti_sensori.id_sens and sensore.id_sens = '$id_s') INNER JOIN utente_impianti ON impianti_sensori.id_imp= utente_impianti.id_imp_utente and utente_impianti.username_utente = '$user'");
