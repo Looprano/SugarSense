@@ -9,13 +9,13 @@ $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 if($count == 1){
 
-    while ($row=addslashes(mysqli_fetch_array($query)))
+    while ($row=mysqli_fetch_array($query))
     {
-        $nome = $row['nome'];
-        $cognome = $row['cognome'];
-        $codicef = $row['codicefisc'];
-        $user = $row['username'];
-        $tipo = $row['type'];
+        $nome = addslashes($row['nome']);
+        $cognome = addslashes($row['cognome']);
+        $codicef = addslashes($row['codicefisc']);
+        $user = addslashes($row['username']);
+        $tipo = addslashes($row['type']);
 
         echo $nome." ".$cognome." ".$codicef." ".$user." ".$tipo." "; }
 }else
