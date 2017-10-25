@@ -10,4 +10,3 @@ switch($_POST['case'])
     default:
         header( 'Utente_menu.php');
 }
-?>

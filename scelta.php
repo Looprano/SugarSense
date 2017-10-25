@@ -19,4 +19,3 @@ switch($_POST['case'])
     default:
         header( 'iot_menu.php');
 }
-?>

@@ -13,4 +13,3 @@ switch($_POST['case'])
     default:
         header( 'Utente_sensori.php');
 }
-?>
