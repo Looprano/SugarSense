@@ -1,5 +1,5 @@
 <?php
-include ('core.php');
+include 'core.php';
 $user = addslashes($_SESSION['username']);
 $sql =("SELECT id_imp, indirizzo from utente_impianti INNER JOIN impianto where utente_impianti.username_utente ='$user' AND utente_impianti.id_imp_utente = impianto.id_imp;");
 $query = mysqli_query($conn,$sql);

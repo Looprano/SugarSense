@@ -1,6 +1,6 @@
 
 <?php
-include ('core.php');
+include 'core.php';
 $username = addslashes($_POST['Username']);
 $sql =("SELECT nome,cognome,codicefisc,username,type FROM login WHERE username ='$username'");
 $query = mysqli_query($conn,$sql);

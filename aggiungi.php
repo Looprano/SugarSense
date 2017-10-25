@@ -1,5 +1,5 @@
 <?php
-include ('core.php');
+include 'core.php';
 $username = addslashes($_POST['Username']);
 $nome =addslashes( $_POST['Nome']);
 $cognome =addslashes( $_POST['Cognome']);
