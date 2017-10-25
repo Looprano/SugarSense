@@ -2,7 +2,7 @@
 <?php
 
 $conn = mysqli_connect("localhost", "root", "fedeneco123", "company");
-$username = $_POST['Username'];
+$username = addslashes($_POST['Username']);
 
 $sql =("SELECT nome,cognome,codicefisc,username,password,type FROM login WHERE username ='$username'");
 $query = mysqli_query($conn,$sql);

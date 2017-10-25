@@ -2,8 +2,8 @@
 $conn = mysqli_connect("localhost", "root", "fedeneco123", "company");
 
 $username = addslashes($_POST['Username']);
-$nome = $_POST['Nome'];
-$cognome = $_POST['Cognome'];
+$nome =addslashes( $_POST['Nome']);
+$cognome =addslashes( $_POST['Cognome']);
 
 $cf= $_POST['Codice_Fiscale'];
 $password = $_POST['Password'];
