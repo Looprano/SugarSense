@@ -9,17 +9,12 @@ $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 if($count == 1){
 
-    while ($row=mysqli_fetch_array($query))
+    while ($row=mysqli_fetch_array($query,MYSQLI_ASSOC))
     {
-        $nome = $row['nome'];
-        $cognome = $row['cognome'];
-        $codicef = $row['codicefisc'];
-        $user = $row['username'];
-        $tipo = $row['type'];
-
-        echo $nome," ",$cognome," ",$codicef," ",$user," ",$tipo," "; }
+        printf ( "%s %s %s %s %s\n",$row['nome'],$row['cognome'],$row['codicefisc'],$row['username'],$row['type']);
+    }
 }else
-    {
+{
     echo 'Username non presente';
 }
 ?>
