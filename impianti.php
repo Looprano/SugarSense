@@ -6,7 +6,7 @@ $sql =("SELECT id_imp, indirizzo from utente_impianti INNER JOIN impianto where 
 $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 
-if($count != 0){
+if($count !==  0){
     echo "id_impianto    indirizzo";
     while ($row=mysqli_fetch_array($query))
     {

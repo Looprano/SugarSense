@@ -6,7 +6,7 @@ $sql =("SELECT sensore.id_sens,valore,descrizione from(sensore INNER JOIN impian
 $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 
-if($count !=0){
+if($count !== 0){
     echo "id_impianto indirizzo";
     while ($row=mysqli_fetch_array($query))
     {

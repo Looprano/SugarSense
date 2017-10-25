@@ -21,16 +21,16 @@ if (isset($_POST['submit'])) {
 
 
         $db_type = $row["type"];
-        if($username == $db_user && $password == $db_pass)
+        if($username ===  $db_user && $password === $db_pass)
         {
             session_start();
             $_SESSION["username"]=$db_user;
             $_SESSION["type"]=$db_type;
 
-            if($_SESSION["type"] == 'admin'){
+            if($_SESSION["type"] === 'admin'){
                 header("location: iot_menu.php");
             }
-            else if ($_SESSION["type"] == 'user'){
+            else if ($_SESSION["type"] === 'user'){
                 header("location: Utente_menu.php");
             }
             else {
