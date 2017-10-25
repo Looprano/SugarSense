@@ -33,6 +33,9 @@ if (isset($_POST['submit'])) {
             else if ($_SESSION["type"] == 'user'){
                 header("location: Utente_menu.php");
             }
+            else {
+                echo 'Login Error';
+            }
         }
         else {
 
