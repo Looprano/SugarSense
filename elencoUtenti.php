@@ -1,8 +1,6 @@
 
 <?php
-
-$conn = mysqli_connect('localhost', 'root', 'fedeneco123', 'company');
-
+include ('core.php');
 $sql =("SELECT nome,cognome,codicefisc,username,type FROM login");
 $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
@@ -15,4 +13,3 @@ if($count !== 0){
 }else{
     echo 'nessun utente presente';
 }
-?>

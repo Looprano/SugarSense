@@ -1,8 +1,7 @@
 
 <?php
-$conn = mysqli_connect('localhost', 'root', 'fedeneco123', 'company');
+include ('core.php');
 $username = addslashes($_POST['Username']);
-
 $sql =("SELECT username FROM login WHERE username ='$username'");
 $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);

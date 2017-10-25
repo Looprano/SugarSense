@@ -1,7 +1,6 @@
 
 <?php
-
-$conn = mysqli_connect('localhost', 'root', 'fedeneco123', 'company');
+include ('core.php');
 $username = addslashes($_POST['Username']);
 $sql =("SELECT nome,cognome,codicefisc,username,type FROM login WHERE username ='$username'");
 $query = mysqli_query($conn,$sql);
