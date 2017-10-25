@@ -1,7 +1,7 @@
 
 <?php
 include 'core.php';
-$sql =("SELECT nome,cognome,codicefisc,username,type FROM login");
+$sql =('SELECT nome,cognome,codicefisc,username,type FROM login');
 $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 
