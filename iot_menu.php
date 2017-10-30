@@ -11,9 +11,6 @@
 
 <body background="nature-fields-grass-flower-blur-photography.jpg">
 
-
-
-
 <div align="center" >
     <br><br><br><br>
     <form title="Esegui" action="scelta.php" method="post">
@@ -29,7 +26,7 @@
 </div>
 
 <footer>
-    <input type="submit" name ="logout" class="logout"  value="Logout"  >
+    <input type="submit" name ="logout" class="logout"  value="Logout" onclick="location.href='index.php'"  >
 </footer>
 
 </body>
