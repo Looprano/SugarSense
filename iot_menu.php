@@ -29,7 +29,7 @@
 </div>
 
 <footer>
-    <input type="submit" name ="logout" class="logout"  value="Logout"  >
+    <input type="submit" name ="logout" value = "Logout" class="logout" onclick="location.href='index.php'" >
 </footer>
 
 </body>

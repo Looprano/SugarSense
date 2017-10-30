@@ -22,8 +22,8 @@
 
 
 <footer>
-    <input type="button" class="logout" >
-    <input type="button" class="home">
+    <input type="button" class="logout" value = "Logout" onclick="location.href='index.php'" >
+    <input type="button" class="home" value = "Home" onclick="location.href='iot_menu.php'">
 </footer>
 </body>
 </html>

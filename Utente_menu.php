@@ -28,8 +28,7 @@
 </div>
 
 <footer>
-    <input type="button" class="logout">
-    <input type="button" class="home">
+    <input type="button" class="logout" value = "logout" onclick="location.href='index.php'">
 </footer>
 
 </body>
