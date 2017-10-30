@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>SugarSense</title>
     <style type="text/css">
-        @import url("../theme.css");
+        @import url("theme.css");
     </style>
 </head>
 
-<body background="../images/IoT.jpg">
+<body background="IoT.jpg">
 
 <h2>SUGARSENSE</h2>
 <h3>Rimuovi Utente</h3>
@@ -20,9 +20,10 @@
     </form>
 </div>
 
+
 <footer>
-    <input type="button" class="logout" >
-    <input type="button" class="home">
+    <input type="button" class="logout" value = "Logout" onclick="location.href='index.php'" >
+    <input type="button" class="home" value = "Home" onclick="location.href='iot_menu.php'">
 </footer>
 </body>
 </html>

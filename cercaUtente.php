@@ -6,11 +6,11 @@
     <title>SugarSense</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <style type="text/css">
-        @import url("../theme.css");
+        @import url("theme.css");
     </style>
 </head>
 
-<body background="../images/IoT.jpg">
+<body background="IoT.jpg">
 
 <h2>SUGARSENSE</h2>
 <h3>Cerca Utente</h3>
@@ -23,8 +23,8 @@
 </div>
 
 <footer>
-    <input type="button" class="logout" >
-    <input type="button" class="home">
+    <input type="button" class="logout" value = "Logout" onclick="location.href='index.php'" >
+    <input type="button" class="home" value = "Home" onclick="location.href='iot_menu.php'">
 </footer>
 </body>
 </html>

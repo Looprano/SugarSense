@@ -9,10 +9,10 @@
     <link href="theme.css" rel="stylesheet" type="text/css">
 </head>
 
-<body background="nature-fields-grass-flower-blur-photography.jpg">
+<body background="IoT.jpg">
 
-
-
+<h2>SUGARSENSE</h2>
+<h3>Amministratore</h3>
 
 <div align="center" >
     <br><br><br><br>
@@ -29,7 +29,7 @@
 </div>
 
 <footer>
-    <input type="submit" name ="logout" class="logout"  value="Logout"  >
+    <input type="submit" name ="logout" value = "Logout" class="logout" onclick="location.href='index.php'" >
 </footer>
 
 </body>

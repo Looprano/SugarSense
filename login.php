@@ -1,16 +1,9 @@
 <?php
-// Starting Session
-$error = ''; // Variable To Store Error Message
-
+include 'core.php';
 if (isset($_POST['submit'])) {
-
 // Define $username and $password
     $username = $_POST['username'];
     $password = $_POST['password'];
-
-// mysqli_connect() function opens a new connection to the MySQL server.
-    $conn = mysqli_connect('localhost', 'root', 'fedeneco123', 'company');
-
 // SQL query to fetch information of registerd users and finds user match.
     $query = mysqli_query($conn,'SELECT username, password, type FROM login');
 
@@ -18,8 +11,6 @@ if (isset($_POST['submit'])) {
     {
         $db_user = $row['username'];
         $db_pass = $row['password'];
-
-
         $db_type = $row['type'];
         if($username ===  $db_user && $password === $db_pass)
         {
@@ -37,9 +28,6 @@ if (isset($_POST['submit'])) {
                 echo 'Login Error';
             }
         }
-        else {
-
-            echo'fail';
-        }
     }
+    echo 'Username o Password non validi';
 }
