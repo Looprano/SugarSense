@@ -12,7 +12,6 @@
 <body background="UTENTE.jpg">
 
 <h2>SUGARSENSE</h2>
-
 <h3>Sensori</h3>
 
 <div align="center" >

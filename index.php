@@ -15,6 +15,7 @@ if(isset($_SESSION['login_user'])){
 </head>
 
 
+
 <body background="nature-fields-grass-flower-blur-photography.jpg">
 <h1>SUGARSENSE</h1>
 

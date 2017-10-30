@@ -11,6 +11,9 @@
 
 <body background="IoT.jpg">
 
+<h2>SUGARSENSE</h2>
+<h3>Amministratore</h3>
+
 <div align="center" >
     <br><br><br><br>
     <form title="Esegui" action="scelta.php" method="post">
@@ -26,7 +29,7 @@
 </div>
 
 <footer>
-    <input type="submit" name ="logout" class="logout"  value="Logout" onclick="location.href='index.php'"  >
+    <input type="submit" name ="logout" class="logout"  value="Logout"  >
 </footer>
 
 </body>
