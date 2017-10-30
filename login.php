@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
     $conn = mysqli_connect('localhost', 'root', 'fedeneco123', 'company');
 
 // SQL query to fetch information of registerd users and finds user match.
-    $query = mysqli_query($conn,"SELECT username, password, type FROM login");
+    $query = mysqli_query($conn,'SELECT username, password, type FROM login');
 
     while($row = mysqli_fetch_array($query))
     {
