@@ -14,4 +14,3 @@ if($count === 1){
 {
     echo 'Username non presente';
 }
-
