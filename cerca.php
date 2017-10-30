@@ -66,8 +66,7 @@
 	</div>
 
 	<footer>
-	<input type="button" class="logout">
-	<input type="button" class="home">
+        <input type="submit" name ="logout" value = "Logout" class="logout" onclick="location.href='index.php'" >
 	</footer>
 
 
