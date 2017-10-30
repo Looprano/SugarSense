@@ -1,7 +1,3 @@
-<?php
-include("phpgraphlib.php");
-?>
-
 <!doctype html>
 <html>
 <head>
@@ -19,6 +15,7 @@ include("phpgraphlib.php");
 <h2>SUGARSENSE</h2>
 <h3>Prospetto</h3>
 
+<center><img src="Grafico1.php"/></center>
 <footer>
     <input type="button" class="logout">
     <input type="button" class="home">

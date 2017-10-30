@@ -5,11 +5,11 @@
 <meta charset="UTF-8">
 <title>IoT_elencoUtenti</title>
 <style type="text/css">
-    @import url("../Utente/theme.css");
+    @import url("theme.css");
 </style>
 </head>
 
-<body background="../images/IoT.jpg">
+<body background="IoT.jpg">
 
 	<h2>SUGARSENSE</h2>
   	<h3>Amministratore</h3>
