@@ -13,14 +13,14 @@
 <h2>SUGARSENSE</h2>
 <h3>Storico</h3>
 <div align="center">
-    <form>
-        <input type="text" class="ricerca" placeholder="Inserire Impianto">
+    <form method="post" action="cerca_arco_temporale.php">
+        <input type="text" class="ricerca" name ="impianto" placeholder="Inserire Impianto">
         <br>
-        <input type="text" class="ricerca" placeholder="Inserire Sensore">
+        <input type="text" class="ricerca" name = "id_sensore"placeholder="Inserire Sensore">
         <br>
-        <input type="text" class="ricerca" placeholder="Inizio: aaaa-mm-gg">
+        <input type="text" class="ricerca" name = "inizio_data" placeholder="Inizio: aaaa-mm-gg">
         <br>
-        <input type="text" class="ricerca" placeholder="Fine: aaaa-mm-gg">
+        <input type="text" class="ricerca" name = "fine_data" placeholder="Fine: aaaa-mm-gg">
         <br>
         <br>
         <input type="submit" value="" class="pulsante_cerca">
