@@ -1,6 +1,7 @@
 <?php
 // Starting Session
 $error = ''; // Variable To Store Error Message
+include 'core.php';
 
 if (isset($_POST['submit'])) {
 
@@ -9,7 +10,7 @@ if (isset($_POST['submit'])) {
     $password = $_POST['password'];
 
 // mysqli_connect() function opens a new connection to the MySQL server.
-    $conn = mysqli_connect('localhost', 'root', 'fedeneco123', 'company');
+
 
 // SQL query to fetch information of registerd users and finds user match.
     $query = mysqli_query($conn,'SELECT username, password, type FROM login');

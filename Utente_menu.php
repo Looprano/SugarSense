@@ -6,13 +6,13 @@
     <title>SugarSense</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <style type="text/css">
-        @import url("../theme.css");
+        @import url("theme.css");
     </style>
 </head>
 
 
 
-<body background="../images/UTENTE.jpg">
+<body background="UTENTE.jpg">
 
 <h2>SUGARSENSE</h2>
 <h3>Utente</h3>
@@ -23,7 +23,7 @@
         <br>
         <input type="submit" class="menu" name = 'case' value="Sensori">
         <br>
-        <input type="submit" class="menu" name = 'sintesi' value="Sintesi">
+        <input type="submit" class="menu" name = 'case' value="Sintesi">
     </form>
 </div>
 

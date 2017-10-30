@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>SugarSense</title>
     <style type="text/css">
-        @import url("../theme.css");
+        @import url("theme.css");
     </style>
 </head>
 
-<body background="../images/IoT.jpg">
+<body background="IoT.jpg">
 
 <h2>SUGARSENSE</h2>
 <h3>Rimuovi Utente</h3>

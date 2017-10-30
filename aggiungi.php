@@ -15,7 +15,7 @@ if($count === 0){
 
     if(isset($conn) && isset($sql1))
         $query1 = mysqli_query($conn,$sql1);
-    
+
 }else{
     echo 'Username gia presente';
 }
