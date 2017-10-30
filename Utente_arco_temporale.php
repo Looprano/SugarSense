@@ -28,8 +28,8 @@
 </div>
 
 <footer>
-    <input type="button" class="logout" value = "Logout" onclick="location.href='index.php'" >
-    <input type="button" class="home" value = "Home" onclick="location.href='Utente_menu.php'">
+    <input type="button" class="logout" onclick="location.href='index.php'" >
+    <input type="button" class="home" onclick="location.href='iot_menu.php'">
 </footer>
 
 </body>

@@ -65,9 +65,10 @@
 
 	</div>
 
-	<footer>
-        <input type="submit" name ="logout" value = "Logout" class="logout" onclick="location.href='index.php'" >
-	</footer>
+    <footer>
+        <input type="button" class="logout" onclick="location.href='index.php'" >
+        <input type="button" class="home" onclick="location.href='iot_menu.php'">
+    </footer>
 
 
 </body>
