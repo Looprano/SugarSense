@@ -1,20 +1,21 @@
 <?php
 include 'core.php';
+
 $user = addslashes($_SESSION['username']);
-$sql =("SELECT id_imp, indirizzo from utente_impianti INNER JOIN impianto where utente_impianti.username_utente ='$user' AND utente_impianti.id_imp_utente = impianto.id_imp;");
+$sql =("SELECT id_imp, indirizzo from utente_impianti INNER JOIN impianto where utente_impianti.username_utente ='$user' AND utente_impianti.id_imp_utente = impianto.id_imp");
 $query = mysqli_query($conn,$sql);
-$count = mysqli_num_rows($query);
+$count = mysqli_num_rows($query
+);
 
 if($count !==  0){
-    echo "ID Impianto\tIndirizzo";
-
+    echo 'id_impianto    indirizzo';
     while ($row=mysqli_fetch_array($query))
     {
         $id = $row['id_imp'];
         $indirizzo = $row['indirizzo'];
-        echo "$id\t$indirizzo\n";
+        print("<br>");
+      print "<a href=carcaSensoriImpianto.php?id=$id ?>$id</a>";
+       echo $indirizzo;
     }
-}else{
+}else
     echo 'nessun impianto presente';
-}
-
