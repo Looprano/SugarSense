@@ -50,7 +50,6 @@
                 echo "<td>".$codicefiscale."</td>";
                 echo "<td>".$username."</td>";
                 echo "</tr>";
-
                 //printf('%s %s %s %s %s', nome, cognome, codicefiscale, username);
             }
         }else{
@@ -63,8 +62,8 @@
 	</div>
 
 	<footer>
-	<input type="button" class="logout">
-	<input type="button" class="home">
+        <input type="button" class="logout" value = "Logout" onclick="location.href='index.php'" >
+        <input type="button" class="home" value = "Home" onclick="location.href='Iot_menu.php'">
 	</footer>
 
 </body>

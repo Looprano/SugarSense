@@ -6,15 +6,16 @@ $sensore = addslashes($_POST['id_sensore']);
 $inizio = addslashes($_POST['inizio_data']);
 $fine = addslashes($_POST['fine_data']);
 
-$sql =("SELECT nome,cognome,codicefisc,username,type FROM login WHERE username ='$username'");
-$query = mysqli_query($conn,$sql);
+$sql =("SELECT valore from (sensore inner JOIN impianti_sensori on impianti_sensori.id_imp=$impianto and impianti_sensori.id_sens='$sensore' and substring(valore,1,8) BETWEEN '$inizio' and '$fine');
+");
+$query = mysqli_query($conn,$sql) or die("errore nei parametri");
 $count = mysqli_num_rows($query);
-if($count === 1){
+if($count !==0 ){
     while ($row=mysqli_fetch_array($query,MYSQLI_ASSOC))
     {
-        printf ( "%s %s %s %s %s\n",$row['nome'],$row['cognome'],$row['codicefisc'],$row['username'],$row['type']);
+        printf ( "%s",$row['valore']);
     }
 }else
 {
-    echo 'Username non presente';
+    echo 'Nessuna rilevazione presente';
 }
