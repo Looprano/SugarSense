@@ -9,6 +9,7 @@
 </style>
 </head>
 
+
 <body background="../images/IoT.jpg">
 
 	<h2>SUGARSENSE</h2>
