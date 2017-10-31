@@ -1,7 +1,3 @@
-<?php
-include("phpgraphlib.php");
-?>
-
 <!doctype html>
 <html>
 <head>
@@ -19,10 +15,11 @@ include("phpgraphlib.php");
 <h2>SUGARSENSE</h2>
 <h3>Prospetto</h3>
 
+<center><img src="Grafico1.php"/></center><br><br>
+<center><img src="Grafico2.php"/></center><br><br>
 <footer>
-    <input type="button" class="logout">
-    <input type="button" class="home">
+    <input type="button" class="logout" onclick="location.href='index.php'" >
+    <input type="button" class="home" onclick="location.href='iot_menu.php'">
 </footer>
-
 </body>
 </html>

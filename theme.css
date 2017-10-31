@@ -3,6 +3,7 @@
 
 body {
 	background-size: cover;
+	background-attachment: fixed;
 	margin: auto auto;
 }
 
@@ -112,7 +113,7 @@ h3 {
 	height: 10vmin;
 	margin-bottom: 10px;
 	border: none;
-	background-image: url(../images/LOGOUT.png);
+	background-image: url(LOGOUT.png);
 	background-size: contain;
 	background-color: rgba(255,255,255,0.54);
 	border-radius: 5px;
@@ -151,7 +152,7 @@ h3 {
 	width: 8vh;
 	height: 8vh;
 	border: none;
-	background-image: url(images/CERCA.png);
+	background-image: url(CERCA.png);
 	background-size: contain;
 	background-color: rgba(0,0,0,0.00);
 	border-radius: 5px;
@@ -170,7 +171,7 @@ h3 {
 	height: 10vmin;
 	margin-bottom: 10px;
 	border: none;
-	background-image: url(../images/HOME.png);
+	background-image: url(HOME.png);
 	background-size: contain;
 	background-color: rgba(255,255,255,0.54);
 	border-radius: 5px;
