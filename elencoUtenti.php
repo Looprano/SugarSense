@@ -12,13 +12,12 @@
 <body background="IoT.jpg">
 
 	<h2>SUGARSENSE</h2>
-  	<h3>Amministratore</h3>
+  	<h3>Elenco Utenti</h3>
 
     <div align="center">
 
 	<table class="tabellabackground">
    <caption class="testoIntestazione">
-        <p>Elenco Utenti</p>
     </caption>
 
     <thead class="tabellaIntestazione">
