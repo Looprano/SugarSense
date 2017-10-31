@@ -18,7 +18,7 @@
 <div align="center">
     <form method="post" action="ricercaid.php">
         <input type="text" class="ricerca" name = 'id' placeholder="Inserire ID sensore">
-        <input type="submit" value="ricerca" class="pulsante_cerca">
+        <input type="submit" value="" class="pulsante_cerca">
     </form>
 </div>
 

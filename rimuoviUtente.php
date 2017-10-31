@@ -16,7 +16,7 @@
 <div align="center">
     <form method="post" action="rimuovi.php">
         <input type="text" class="ricerca" name = 'Username' placeholder="Inserire username Utente">
-        <input type="submit" class="pulsante_cerca">
+        <input type="submit" value="" class="pulsante_cerca">
     </form>
 </div>
 

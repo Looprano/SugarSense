@@ -23,7 +23,7 @@
         <input type="text" class="ricerca" name = "fine_data" placeholder="Fine: aaaa-mm-gg">
         <br>
         <br>
-        <input type="submit" value="Invia"  class="pulsante_cerca">
+        <input type="submit" value=""  class="pulsante_cerca">
     </form>
 </div>
 
