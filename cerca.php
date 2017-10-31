@@ -14,7 +14,7 @@
 <body background="IoT.jpg">
 
 	<h2>SUGARSENSE</h2>
-  	<h3>Amministratore</h3>
+  	<h3>Elenco Utenti</h3>
 
     <div align="center">
 
@@ -45,16 +45,15 @@
                 $cognome = $row['cognome'];
                 $codicefiscale = $row['codicefisc'];
                 $username = $row['username'];
-
-                echo "<tr class=\"tabellaIntestazione\">";
-                echo "<td>".$nome."</td>";
-                echo "<td>".$cognome."</td>";
-                echo "<td>".$codicefiscale."</td>";
-                echo "<td>".$username."</td>";
-                echo "</tr>";
-
-
-               // printf ( "%s %s %s %s %s\n",$row['nome'],$row['cognome'],$row['codicefisc'],$row['username'],$row['type']);
+                $str = <<<HTML
+                <tr class=\"tabellaIntestazione\">
+                <td>$nome</td>
+                <td>$cognome</td>
+                <td>$codicefiscale</td>
+                <td>$username</td>
+                </tr>
+HTML;
+                echo $str;
             }
         }else
         {
