@@ -43,7 +43,7 @@
                 $id = $row['id_imp'];
                 $indirizzo = $row['indirizzo'];
                 echo "<tr class=\"tabellaIntestazione\">";
-                echo "<td>".$id."</td>";
+                echo "<td>"."<a href=carcaSensoriImpianto.php?id=$id ?>$id.</a>"."</td>";
                 echo "<td>".$indirizzo."</td>";
                 echo "</tr>";
             }
