@@ -52,7 +52,7 @@
                 <td>$username</td>
                 </tr>
 HTML;
-                echo $str;
+                echo htmlspecialchars($str);
             }
         }else
         {

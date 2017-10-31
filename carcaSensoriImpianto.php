@@ -31,7 +31,7 @@
 
         <?php
         include 'core.php';
-        $idImpianto=  $_GET['id'];
+        $idImpianto=  htmlspecialchars($_GET['id']);
         echo "Impianto: $idImpianto";
 
         $sql =("SELECT sensore.id_sens,valore,descrizione FROM (sensore inner join impianti_sensori on impianti_sensori.id_imp = $idImpianto and impianti_sensori.id_sens = sensore.id_sens)");
