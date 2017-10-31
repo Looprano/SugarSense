@@ -17,6 +17,7 @@
 
 <center><img src="Grafico1.php"/></center><br><br>
 <center><img src="Grafico2.php"/></center><br><br>
+<center><img src="Grafico3.php"/></center><br><br>
 <footer>
     <input type="button" class="logout" onclick="location.href='index.php'" >
     <input type="button" class="home" onclick="location.href='iot_menu.php'">

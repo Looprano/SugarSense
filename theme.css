@@ -112,12 +112,12 @@ h3 {
 	width: 10vmin;
 	height: 10vmin;
 	margin-bottom: 10px;
+	position: fixed;
 	border: none;
 	background-image: url(LOGOUT.png);
 	background-size: contain;
 	background-color: rgba(255,255,255,0.54);
 	border-radius: 5px;
-	position: absolute;
 	left: 8px;
 	bottom: 2px;
 	opacity: 0.7;
@@ -175,7 +175,7 @@ h3 {
 	background-size: contain;
 	background-color: rgba(255,255,255,0.54);
 	border-radius: 5px;
-	position: absolute;
+	position: fixed;
 	bottom: 2px;
 	right: 8px;
 	opacity: 0.7;
