@@ -1,21 +1,67 @@
-<?php
-include 'core.php';
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IoT_elencoUtenti</title>
+<style type="text/css">
+    @import url("theme.css");
+</style>
+</head>
 
-$user = addslashes($_SESSION['username']);
-$sql =("SELECT id_imp, indirizzo from utente_impianti INNER JOIN impianto where utente_impianti.username_utente ='$user' AND utente_impianti.id_imp_utente = impianto.id_imp");
-$query = mysqli_query($conn,$sql);
-$count = mysqli_num_rows($query
-);
+<body background="UTENTE.jpg">
 
-if($count !==  0){
-    echo 'id_impianto    indirizzo';
-    while ($row=mysqli_fetch_array($query))
-    {
-        $id = $row['id_imp'];
-        $indirizzo = $row['indirizzo'];
-        print("<br>");
-      print "<a href=carcaSensoriImpianto.php?id=$id ?>$id</a>";
-       echo $indirizzo;
-    }
-}else
-    echo 'nessun impianto presente';
+	<h2>SUGARSENSE</h2>
+  	<h3>Utente</h3>
+
+    <div align="center">
+
+	<table class="tabellabackground">
+   <caption class="testoIntestazione">
+        <p>Elenco Impianti</p>
+    </caption>
+
+    <thead class="tabellaIntestazione">
+        <tr>
+        <th>ID impianto</th>
+        <th>Indirizzo</th>
+
+        </tr>
+    </thead>
+
+        <?php
+        include 'core.php';
+
+        $user = addslashes($_SESSION['username']);
+        $sql =("SELECT id_imp, indirizzo from utente_impianti INNER JOIN impianto where utente_impianti.username_utente ='$user' AND utente_impianti.id_imp_utente = impianto.id_imp");
+        $query = mysqli_query($conn,$sql);
+        $count = mysqli_num_rows($query
+        );
+
+        if($count !==  0){
+
+            while ($row=mysqli_fetch_array($query))
+            {
+                $id = $row['id_imp'];
+                $indirizzo = $row['indirizzo'];
+                echo "<tr class=\"tabellaIntestazione\">";
+                echo "<td>".$id."</td>";
+                echo "<td>".$indirizzo."</td>";
+                echo "</tr>";
+            }
+        }else
+            echo 'nessun impianto presente';
+
+        ?>
+
+</table>
+
+</div>
+
+<footer>
+    <input type="button" class="logout" onclick="location.href='index.php'" >
+    <input type="button" class="home" onclick="location.href='iot_menu.php'">
+</footer>
+
+</body>
+</html>
+
