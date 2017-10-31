@@ -34,7 +34,7 @@
 
         include 'core.php';
         $tipo = addslashes($_POST['tipo']);
-        $user = $_SESSION['username'];
+        $user = addslashes($_SESSION['username']);
         $sql =("SELECT sensore.id_sens,valore,descrizione from(sensore INNER JOIN impianti_sensori on sensore.id_sens = impianti_sensori.id_sens and sensore.id_sens LIKE '$tipo%') INNER JOIN utente_impianti ON impianti_sensori.id_imp= utente_impianti.id_imp_utente and utente_impianti.username_utente = '$user'");
 
         $query = mysqli_query($conn,$sql);
