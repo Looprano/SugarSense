@@ -11,13 +11,12 @@
 <body background="UTENTE.jpg">
 
 <h2>SUGARSENSE</h2>
-<h3>Utente</h3>
+<h3>Elenco Sensori</h3>
 
 <div align="center">
 
     <table class="tabellabackground">
         <caption class="testoIntestazione">
-            <p>Elenco Sensori</p>
         </caption>
 
         <thead class="tabellaIntestazione">
@@ -32,7 +31,7 @@
         <?php
         include 'core.php';
         $idImpianto=  $_GET['id'];
-        echo $idImpianto;
+        echo "Impianto: $idImpianto";
 
         $sql =("SELECT sensore.id_sens,valore,descrizione FROM (sensore inner join impianti_sensori on impianti_sensori.id_imp = $idImpianto and impianti_sensori.id_sens = sensore.id_sens)");
 

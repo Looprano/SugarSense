@@ -17,7 +17,7 @@
 <div align="center">
     <form method="post" action="ricercatipo.php">
         <input type="text" class="ricerca"  name= "tipo" placeholder="Inserire il tipo">
-        <input type="submit"  name ='ricerca' class="pulsante_cerca">
+        <input type="submit" class="pulsante_cerca" value="">
     </form>
 </div>
 

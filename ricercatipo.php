@@ -12,13 +12,12 @@
 <body background="UTENTE.jpg">
 
 <h2>SUGARSENSE</h2>
-<h3>Utente</h3>
+<h3>Elenco Sensori</h3>
 
 <div align="center">
 
     <table class="tabellabackground">
         <caption class="testoIntestazione">
-            <p>Elenco Sensori</p>
         </caption>
 
         <thead class="tabellaIntestazione">
@@ -56,7 +55,7 @@
             }
         }else{
 
-            echo 'nessun sensore presente ';
+            echo 'Nessun sensore presente.';
         }
 
         ?>
@@ -65,8 +64,8 @@
     </table>
 </div>
 <footer>
-    <input type="button" class="logout">
-    <input type="button" class="home">
+    <input type="button" class="logout" onclick="location.href='index.php'" >
+    <input type="button" class="home" onclick="location.href='Utente_menu.php'">
 </footer>
 
 </body>
