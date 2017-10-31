@@ -47,12 +47,15 @@
                 $id = htmlspecialchars($row['id_sens']);
                 $valore =htmlspecialchars($row['valore']);
                 $descrizione = htmlspecialchars($row['descrizione']);
+                $str = <<<HTML
+                <tr class=\"tabellaIntestazione\">
+                <td>$id</td>
+                <td>$valore</td>
+                <td>$descrizione</td>
+                </tr>
 
-                echo "<tr class=\"tabellaIntestazione\">";
-                echo "<td>".$id."</td>";
-                echo "<td>".$valore."</td>";
-                echo "<td>".$descrizione."</td>";
-                echo "</tr>";
+HTML;
+                echo $str;
             }
         }else{
             echo 'nessun sensore presente';

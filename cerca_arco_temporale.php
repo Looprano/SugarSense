@@ -43,11 +43,12 @@
             while ($row=mysqli_fetch_array($query,MYSQLI_ASSOC))
             {
                 $valore = htmlspecialchars($row['valore']);
-                //  $valore = $row['valore'];
-
-                echo "<tr class=\"tabellaIntestazione\">";
-                echo "<td>".$valore."</td>";
-                echo "</tr>";
+                $str = <<<HTML
+                <tr class=\"tabellaIntestazione\">
+                <td>$valore</td>
+                </tr>
+HTML;
+                echo $str;
             }
         }else
         {

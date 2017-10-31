@@ -43,14 +43,15 @@
                 $cognome = htmlspecialchars($row['cognome']);
                 $codicefiscale = htmlspecialchars($row['codicefisc']);
                 $username = htmlspecialchars($row['username']);
-
-                echo "<tr class=\"tabellaIntestazione\">";
-                echo "<td>".$nome."</td>";
-                echo "<td>".$cognome."</td>";
-                echo "<td>".$codicefiscale."</td>";
-                echo "<td>".$username."</td>";
-                echo "</tr>";
-                //printf('%s %s %s %s %s', nome, cognome, codicefiscale, username);
+                $str = <<<HTML
+                <tr class=\"tabellaIntestazione\">
+                <td>$nome</td>
+                <td>$cognome</td>
+                <td>$codicefiscale</td>
+                <td>$username</td>
+                </tr>
+HTML;
+                echo $str;
             }
         }else{
             echo 'nessun utente presente';

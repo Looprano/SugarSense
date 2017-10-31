@@ -42,10 +42,13 @@
             {
                 $id = htmlspecialchars($row['id_imp']);
                 $indirizzo = htmlspecialchars($row['indirizzo']);
-                echo "<tr class=\"tabellaIntestazione\">";
-                echo "<td>"."<a href=carcaSensoriImpianto.php?id=$id ?>$id.</a>"."</td>";
-                echo "<td>".$indirizzo."</td>";
-                echo "</tr>";
+                $str = <<<HTML
+                <tr class=\"tabellaIntestazione\">
+                <td><a href=carcaSensoriImpianto.php?id=$id ?>$id</a></td>
+                <td>$indirizzo</td>
+                </tr>
+HTML;
+                echo $str;
             }
         }else
             echo 'nessun impianto presente';
