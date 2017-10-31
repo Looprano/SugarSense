@@ -9,8 +9,8 @@ if (isset($_POST['submit'])) {
     $count = mysqli_num_rows($query);
     if($count === 1) {
         while ($row = mysqli_fetch_array($query)) {
-            $db_user = $row['username'];
-            $db_type = $row['type'];
+            $db_user = htmlspecialchars($row['username']);
+            $db_type = htmlspecialchars($row['type']);
             if ($username === $db_user) {
                 session_start();
                 $_SESSION['username'] = $db_user;

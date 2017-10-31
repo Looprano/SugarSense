@@ -2,34 +2,34 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>IoT_elencoUtenti</title>
-<style type="text/css">
-    @import url("theme.css");
-</style>
+    <meta charset="UTF-8">
+    <title>IoT_elencoUtenti</title>
+    <style type="text/css">
+        @import url("theme.css");
+    </style>
 </head>
 
 
 <body background="IoT.jpg">
 
-	<h2>SUGARSENSE</h2>
-  	<h3>Amministratore</h3>
+<h2>SUGARSENSE</h2>
+<h3>Amministratore</h3>
 
-    <div align="center">
+<div align="center">
 
-	<table class="tabellabackground">
-   <caption class="testoIntestazione">
-        <p>Elenco Utenti</p>
-    </caption>
+    <table class="tabellabackground">
+        <caption class="testoIntestazione">
+            <p>Elenco Utenti</p>
+        </caption>
 
-    <thead class="tabellaIntestazione">
+        <thead class="tabellaIntestazione">
         <tr>
-        <th>Nome</th>
-        <th>Cognome</th>
-        <th>Codice Fiscale</th>
-        <th>Username</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Codice Fiscale</th>
+            <th>Username</th>
         </tr>
-    </thead>
+        </thead>
 
         <?php
         include 'core.php';
@@ -40,10 +40,10 @@
         if($count === 1){
             while ($row=mysqli_fetch_array($query,MYSQLI_ASSOC))
             {
-                $nome = $row['nome'];
-                $cognome = $row['cognome'];
-                $codicefiscale = $row['codicefisc'];
-                $username = $row['username'];
+                $nome = htmlspecialchars($row['nome']);
+                $cognome = htmlspecialchars($row['cognome']);
+                $codicefiscale = htmlspecialchars($row['codicefisc']);
+                $username = htmlspecialchars($row['username']);
 
                 echo "<tr class=\"tabellaIntestazione\">";
                 echo "<td>".$nome."</td>";
@@ -51,9 +51,6 @@
                 echo "<td>".$codicefiscale."</td>";
                 echo "<td>".$username."</td>";
                 echo "</tr>";
-
-
-               // printf ( "%s %s %s %s %s\n",$row['nome'],$row['cognome'],$row['codicefisc'],$row['username'],$row['type']);
             }
         }else
         {
@@ -61,14 +58,14 @@
         }
         ?>
 
-	</table>
+    </table>
 
-	</div>
+</div>
 
-    <footer>
-        <input type="button" class="logout" onclick="location.href='index.php'" >
-        <input type="button" class="home" onclick="location.href='iot_menu.php'">
-    </footer>
+<footer>
+    <input type="button" class="logout" onclick="location.href='index.php'" >
+    <input type="button" class="home" onclick="location.href='iot_menu.php'">
+</footer>
 
 
 </body>

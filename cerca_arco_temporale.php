@@ -42,7 +42,8 @@
         if($count !==0 ){
             while ($row=mysqli_fetch_array($query,MYSQLI_ASSOC))
             {
-                $valore = $row['valore'];
+                $valore = htmlspecialchars($row['valore']);
+                //  $valore = $row['valore'];
 
                 echo "<tr class=\"tabellaIntestazione\">";
                 echo "<td>".$valore."</td>";

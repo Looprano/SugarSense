@@ -41,8 +41,8 @@
 
             while ($row=mysqli_fetch_array($query))
             {
-                $id = $row['id_imp'];
-                $indirizzo = $row['indirizzo'];
+                $id = htmlspecialchars($row['id_imp']);
+                $indirizzo = htmlspecialchars($row['indirizzo']);
                 echo "<tr class=\"tabellaIntestazione\">";
                 echo "<td>"."<a href=carcaSensoriImpianto.php?id=$id ?>$id.</a>"."</td>";
                 echo "<td>".$indirizzo."</td>";

@@ -42,9 +42,9 @@
         if($count !== 0){
             while ($row=mysqli_fetch_array($query))
             {
-                $id = $row['id_sens'];
-                $valore = $row['valore'];
-                $descrizione = $row['descrizione'];
+                $id = htmlspecialchars($row['id_sens']);
+                $valore = htmlspecialchars($row['valore']);
+                $descrizione = htmlspecialchars($row['descrizione']);
                 echo "<tr class=\"tabellaIntestazione\">";
                 echo "<td>".$id."</td>";
                 echo "<td>".$valore."</td>";

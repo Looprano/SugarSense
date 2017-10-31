@@ -39,10 +39,10 @@
         if($count !== 0){
             while ($row=mysqli_fetch_array($query))
             {
-                $nome = $row['nome'];
-                $cognome = $row['cognome'];
-                $codicefiscale = $row['codicefisc'];
-                $username = $row['username'];
+                $nome = htmlspecialchars($row['nome']);
+                $cognome = htmlspecialchars($row['cognome']);
+                $codicefiscale = htmlspecialchars($row['codicefisc']);
+                $username = htmlspecialchars($row['username']);
 
                 echo "<tr class=\"tabellaIntestazione\">";
                 echo "<td>".$nome."</td>";
