@@ -11,7 +11,8 @@ $sql =sprintf("SELECT username FROM login WHERE username ='%s'",$username);
 $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 if($count === 0){
-
+    header('location: iot_menu.php');
+    
     $sql1 =sprintf("INSERT INTO login(nome,cognome,codicefisc,username,password,type) VALUE('%s','%s','%s','%s','%s','%s')",
         $nome,$cognome,$cf,$username,$passmd5,'user');
 
@@ -20,5 +21,6 @@ if($count === 0){
 
 }else{
     echo 'Username gia presente';
+
 }
 

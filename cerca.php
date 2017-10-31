@@ -40,10 +40,10 @@
         if($count === 1){
             while ($row=mysqli_fetch_array($query,MYSQLI_ASSOC))
             {
-                $nome = $row['nome'];
-                $cognome = $row['cognome'];
-                $codicefiscale = $row['codicefisc'];
-                $username = $row['username'];
+                $nome = htmlspecialchars($row['nome']);
+                $cognome = htmlspecialchars($row['cognome']);
+                $codicefiscale = htmlspecialchars($row['codicefisc']);
+                $username =htmlspecialchars( $row['username']);
                 $str = <<<HTML
                 <tr class=\"tabellaIntestazione\">
                 <td>$nome</td>
@@ -52,7 +52,7 @@
                 <td>$username</td>
                 </tr>
 HTML;
-                echo $str;
+                echo htmlspecialchars($str);
             }
         }else
         {
