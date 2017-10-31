@@ -23,7 +23,7 @@ if(isset($_SESSION['login_user'])){
     <form title="Login" action="login.php" method="post">
         <input name = "username" type="text" placeholder="Username" class="accesso"><br />
         <input name = "password" type="password" placeholder="Password" class="accesso"><br />
-        <input name="submit" type="submit" value=" Login ">
+        <input name="submit" type="submit" value=" Login" id="pulsante">
     </form>
 </div>
 

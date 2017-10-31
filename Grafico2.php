@@ -6,7 +6,7 @@ $data2 = array('Lunedi'=>15, 'Martedi'=>23, 'Mercoledi'=>23,'Giovedi'=>12, 'Vene
 $data3 = array('Lunedi'=>43, 'Martedi'=>23, 'Mercoledi'=>34, 'Giovedi'=>16, 'Venerdi'=>20, 'Sabato'=>29, 'Domenica'=>35);
 $data4 = array('Lunedi'=>23, 'Martedi'=>34, 'Mercoledi'=>23, 'Giovedi'=>9, 'Venerdi'=>8, 'Sabato'=>18, 'Domenica'=>23);
 $graph->addData($data, $data2, $data3, $data4);
-$graph->setTitle("Temperatura Massima Settimanale");
+$graph->setTitle("Temperatura Massima Settimanale (C°)");
 $graph->setTitleLocation("left");
 $graph->setGradient('teal', '#0000FF');
 $graph->setXValuesHorizontal(true);
