@@ -15,9 +15,9 @@
 <h2>SUGARSENSE</h2>
 <h3>Prospetto</h3>
 
-<center><img src="Grafico1.php"/></center><br><br>
-<center><img src="Grafico2.php"/></center><br><br>
-<center><img src="Grafico3.php"/></center><br><br>
+<p align="center"><img src="Grafico1.png"/></p>
+<p align="center"><img src="Grafico2.png"/></p>
+<p align="center"><img src="Grafico3.png"/></p>
 <footer>
     <input type="button" class="logout" onclick="location.href='index.php'" >
     <input type="button" class="home" onclick="location.href='Utente_menu.php'">
