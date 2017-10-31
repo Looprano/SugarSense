@@ -57,7 +57,7 @@
                 </tr>
 
 HTML;
-                echo $str;
+                echo htmlspecialchars($str);
             }
         }else{
             echo 'nessun sensore presente';
