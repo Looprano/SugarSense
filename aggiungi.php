@@ -5,7 +5,7 @@ $nome =addslashes( $_POST['Nome']);
 $cognome =addslashes( $_POST['Cognome']);
 $cf= addslashes($_POST['Codice_Fiscale']);
 $password = addslashes($_POST['Password']);
-$passmd5=md5($password);
+$hash = password_hash($password, PASSWORD_DEFAULT);
 
 $sql =sprintf("SELECT username FROM login WHERE username ='%s'",$username);
 $query = mysqli_query($conn,$sql);
@@ -14,7 +14,7 @@ if($count === 0){
     header('location: iot_menu.php');
 
     $sql1 =sprintf("INSERT INTO login(nome,cognome,codicefisc,username,password,type) VALUE('%s','%s','%s','%s','%s','%s')",
-        $nome,$cognome,$cf,$username,$passmd5,'user');
+        $nome,$cognome,$cf,$username,$hash,'user');
 
     if(isset($conn) && isset($sql1))
         $query1 = mysqli_query($conn,$sql1);
