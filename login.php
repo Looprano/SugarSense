@@ -1,6 +1,6 @@
 <?php
 include 'core.php';
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit'])>0) {
     $username = addslashes($_POST['username']);
     $password = addslashes($_POST['password']);
     $sql1 = ("SELECT password FROM login where login.username = \"$username\";");
