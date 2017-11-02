@@ -55,7 +55,7 @@ HTML;
                 echo $str;
             }
         }else{
-            echo 'Impianto non valido';
+            header('location: Errore.php');
         }
 
         ?>

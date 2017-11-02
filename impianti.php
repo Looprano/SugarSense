@@ -51,7 +51,7 @@ HTML;
                 echo $str;
             }
         }else
-            echo 'nessun impianto presente';
+            header('location: Errore.php');
 
         ?>
 

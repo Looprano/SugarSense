@@ -52,7 +52,7 @@ HTML;
             }
         }else
         {
-            echo 'Nessuna rilevazione presente';
+            header('location: Errore.php');
         }
         ?>
 

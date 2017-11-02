@@ -53,8 +53,8 @@
 HTML;
                 echo $str;
             }
-        }else{
-            echo 'nessun utente presente';
+        }else {
+            header('location: Errore.php');
         }
         ?>
 

@@ -55,7 +55,7 @@ HTML;
             }
         }else
         {
-            echo 'Username non presente';
+            header('location: Errore.php');
         }
         ?>
 

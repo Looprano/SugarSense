@@ -60,7 +60,7 @@ HTML;
                 echo htmlspecialchars($str);
             }
         }else{
-            echo 'nessun sensore presente';
+            header('location: Errore.php');
         }
 
         ?>

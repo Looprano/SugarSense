@@ -9,5 +9,5 @@ if($count === 1){
     $sql1=("DELETE FROM `login` WHERE username = '$username'");
     //$query1 = mysqli_query($conn,$sql1);
 }else{
-    echo 'Utente non presente';
+    header('location: Errore.php');
 }

@@ -59,7 +59,7 @@ HTML;
             }
         }else{
 
-            echo 'Nessun sensore presente.';
+            header('location: Errore.php');
         }
 
         ?>
