@@ -53,7 +53,7 @@ HTML;
 
             }
         }else{
-            echo 'nessun impianto presente';
+            header('location: Errore.php');
 
         }
         ?>
