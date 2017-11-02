@@ -19,13 +19,13 @@
 </head>
 
 
-<body background="IoT.jpg">
+<body background="errori.jpg">
 
 <h2>SUGARSENSE</h2>
 
 <div align="center" class="errore">
 
-    <h3>Nessun Elemento Trovato</h3>
+    <h3>Errore</h3>
 
 
     <footer>

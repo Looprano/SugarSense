@@ -28,11 +28,13 @@ if (isset($_POST['submit'])>0) {
                         } else if ($_SESSION['type'] === 'user') {
                             header('location: Utente_menu.php');
                         } else {
-                            echo 'Login Error';
+                            header('location: ErroreLogin.php');
                         }
                     }
                 }
             }
+        } else {
+            header('location: ErroreLogin.php');
         }
     } else {
         header('location: ErroreLogin.php');
