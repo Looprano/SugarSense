@@ -51,7 +51,7 @@
                 <td>$username</td>
                 </tr>
 HTML;
-                echo ($str);
+                echo htmlspecialchars_decode(htmlspecialchars($str));
             }
         }else
         {
