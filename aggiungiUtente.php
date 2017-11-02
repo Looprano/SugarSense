@@ -21,7 +21,7 @@
         <br>
         <input type="text" class="registrazione" name = 'Cognome' placeholder="Cognome">
         <br>
-        <input type="text" class="registrazione" name = 'Codice_Fiscale' placeholder="Codice_Fiscale">
+        <input type="text" class="registrazione" name = 'Codice_Fiscale' placeholder="Codice Fiscale">
         <br>
         <input type="text" class="registrazione" name = 'Username' placeholder="Username">
         <br>
