@@ -22,7 +22,6 @@
 <body background="IoT.jpg">
 
 <h2>SUGARSENSE</h2>
-<h3>Amministratore</h3>
 
 <div align="center" class="errore">
 

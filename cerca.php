@@ -53,8 +53,7 @@
 HTML;
                 echo htmlspecialchars_decode(htmlspecialchars($str));
             }
-        }else
-        {
+        }else {
             header('location: Errore.php');
         }
         ?>
