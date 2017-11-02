@@ -34,6 +34,9 @@ if (isset($_POST['submit'])>0) {
                 }
             }
         }
+    } else {
+        header('location: ErroreLogin.php'); 
+        //echo 'Username o Password non validi';
     }
-    echo 'Username o Password non validi';
+
 }
