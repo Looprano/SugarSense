@@ -19,7 +19,6 @@
 
 	<table class="tabellabackground">
    <caption class="testoIntestazione">
-        <p>Elenco Utenti</p>
     </caption>
 
     <thead class="tabellaIntestazione">
@@ -52,7 +51,7 @@
                 <td>$username</td>
                 </tr>
 HTML;
-                echo htmlspecialchars($str);
+                echo ($str);
             }
         }else
         {

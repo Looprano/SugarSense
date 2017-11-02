@@ -55,7 +55,7 @@ HTML;
                 echo $str;
             }
         }else{
-            echo 'impianto non valido';
+            echo 'Impianto non valido';
         }
 
         ?>
