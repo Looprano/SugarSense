@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>IoT_menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SugarSense</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <style type="text/css">
         @import url("theme.css");
     </style>
-    <link href="theme.css" rel="stylesheet" type="text/css">
 </head>
 
 <body background="IoT.jpg">
@@ -24,7 +25,6 @@
         <input type="submit" class="menu" name ="case" value="Ricerca Utente">
         <br>
         <input type="submit" class="menu" name ="case" value="Rimuovi Utente">
-
     </form>
 </div>
 

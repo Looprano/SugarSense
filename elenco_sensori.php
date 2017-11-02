@@ -53,7 +53,7 @@ HTML;
 
             }
         }else{
-            header('location: Errore.php');
+           header('location: Errore.php');
 
         }
         ?>

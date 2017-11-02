@@ -16,6 +16,8 @@ switch($_POST['case'])
     case 'Visualizza Storico':
         header('Location: Utente_arco_temporale.php');
         break;
+    case 'Esporta Dati':
+        header('Location: esporta_dati.php');
     default:
         header( 'Utente_menu.php');
 }

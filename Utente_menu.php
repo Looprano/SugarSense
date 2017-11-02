@@ -24,6 +24,8 @@
         <input type="submit" class="menu" name = 'case' value="Sensori">
         <br>
         <input type="submit" class="menu" name = 'case' value="Sintesi">
+        <br>
+        <input type="submit" class="menu" name = 'case' value="Esporta Dati">
     </form>
 </div>
 
