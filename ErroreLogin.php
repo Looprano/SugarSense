@@ -19,10 +19,10 @@
 </head>
 
 
-<body background="IoT.jpg">
+<body background="nature-fields-grass-flower-blur-photography.jpg">
 
 <h2>SUGARSENSE</h2>
-<h3>Amministratore</h3>
+
 
 <div align="center" class="errore">
 
