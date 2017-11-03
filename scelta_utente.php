@@ -18,6 +18,7 @@ switch($_POST['case'])
         break;
     case 'Esporta Dati':
         header('Location: esporta_dati.php');
+        break;
     default:
         header( 'Utente_menu.php');
 }
