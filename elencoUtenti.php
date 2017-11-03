@@ -1,5 +1,5 @@
 <?php
-session_start();
+include 'core.php';
 if(!isset($_SESSION['username']))
     header('Location:index.php');
 ?>
@@ -36,7 +36,6 @@ if(!isset($_SESSION['username']))
     </thead>
 
         <?php
-        include 'core.php';
         $sql =('SELECT nome,cognome,codicefisc,username,type FROM login');
         $query = mysqli_query($conn,$sql);
         $count = mysqli_num_rows($query);
