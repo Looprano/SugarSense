@@ -45,6 +45,8 @@ HTML;
 <h4 style="text-align: center">Non esistono sensori con questo ID</h4>
 HTML;
             break;
+        default:
+            break;
     }
 
     echo $error;
