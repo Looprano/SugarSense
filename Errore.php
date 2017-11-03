@@ -15,6 +15,11 @@
 <h2>SUGARSENSE</h2>
 <h3 style="text-align: center">Errore</h3>
 
+<div>
+    <?php
+    echo $errore;
+    ?>
+</div>
 
     <footer>
         <input type="button" class="logout" onclick="location.href='index.php'">

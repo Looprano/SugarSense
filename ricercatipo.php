@@ -58,12 +58,13 @@ HTML;
                 echo $str;
             }
         }else{
+            $errore = <<<HTML
+<h3>Il tipo non esiste</h3>
+HTML;
 
-            header('location: Errore.php');
+            header('location: Errore.php ? parametro = $errore');
 
 
-
-            echo $stringa;
         }
 
         ?>
