@@ -52,7 +52,9 @@ HTML;
             }
         }else
         {
-            header('location: Errore.php');
+            $errore = 6;
+
+            header('location:Errore.php?parametro='.$errore);
         }
         ?>
 

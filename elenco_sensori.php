@@ -54,7 +54,7 @@ HTML;
             }
         }else{
             $errore = 3;
-            header('location:Errore.php?parametro'.$errore);
+            header('location:Errore.php?parametro='.$errore);
 
         }
         ?>
