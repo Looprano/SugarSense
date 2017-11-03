@@ -31,7 +31,7 @@ if(!isset($_SESSION['username']))
         <br>
         <input type="text" class="registrazione" name = 'Username' placeholder="Username">
         <br>
-        <input type="text" class="registrazione" name = 'Password' placeholder="Password">
+        <input type="password" class="registrazione" name = 'Password' placeholder="Password">
         <br>
         <input type="submit" class="invio" value="Aggiungi">
     </form>
