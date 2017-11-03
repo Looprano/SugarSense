@@ -58,11 +58,10 @@ HTML;
                 echo $str;
             }
         }else{
-            $errore = 4;
+
+            $errore = '4';
 
             header('location:Errore.php?parametro='.$errore);
-
-
 
         }
 

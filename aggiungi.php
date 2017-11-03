@@ -20,7 +20,7 @@ if($count === 0){
         $query1 = mysqli_query($conn,$sql1);
 
 }else{
-    $errore = 1;
+    $errore = '1';
 
     header('location:Errore.php?parametro='.$errore);
 

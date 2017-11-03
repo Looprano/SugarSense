@@ -18,38 +18,36 @@
 <div>
     <?php
 
-    switch (parametro){
-        case 1:
+    $error = null;
+    switch ($_GET['parametro']){
+        case '1':
             $error = <<<HTML
-<h3>L'username è già in uso</h3>
+<h4 style="text-align: center">L'username è già in uso</h4>
 HTML;
-        case 2:
+            break;
+        case '2':
             $error = <<<HTML
-<h3>L'username non esiste</h3>
+<h4 style="text-align: center">L'username non esiste</h4>
 HTML;
-        case 3:
+            break;
+        case '3':
             $error = <<<HTML
-<h3>Il database è vuoto</h3>
+<h4 style="text-align: center">Il database è vuoto</h4>
 HTML;
-        case 4:
+            break;
+        case '4':
             $error = <<<HTML
-<h3>Non esistono sensori con questo tipo</h3>
+<h4 style="text-align: center">Non esistono sensori di questo tipo</h4>
 HTML;
-        case 5:
+            break;
+        case '5':
             $error = <<<HTML
-<h3>Non esistono sensori con questo ID</h3>
+<h4 style="text-align: center">Non esistono sensori con questo ID</h4>
 HTML;
-        case 6:
-            $error = <<<HTML
-<h3>Arco Temporale non corretto</h3>
-HTML;
-
-
-
-
+            break;
     }
 
-    echo $_GET[parametro];
+    echo $error;
 
 
     ?>
