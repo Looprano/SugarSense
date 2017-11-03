@@ -1,3 +1,9 @@
+<?php
+if($_SESSION['username'] === null){
+    header('Location:index.php');
+}
+?>
+
 <!doctype html>
 <html>
 <head>
