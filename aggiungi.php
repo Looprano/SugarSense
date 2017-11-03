@@ -20,11 +20,9 @@ if($count === 0){
         $query1 = mysqli_query($conn,$sql1);
 
 }else{
-    $errore = <<<HTML
-<h4 style="text-align: center">L'username è già in uso</h4>
-HTML;
+    $errore = 1;
 
-    header('location:Errore.php?parametro='.$errore);
+    header('location:Errore.php?parametro'.$errore);
 
 }
 

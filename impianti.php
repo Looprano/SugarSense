@@ -50,9 +50,10 @@
 HTML;
                 echo $str;
             }
-        }else
-            header('location: Errore.php');
-
+        }else{
+            $errore = 3;
+            header('location:Errore.php?parametro'.$errore);
+        }
         ?>
 
 </table>
