@@ -10,7 +10,7 @@
 </head>
 
 
-<body background="Error.jpg">
+<body background="Errorii.jpg">
 
 <h2>SUGARSENSE</h2>
 <h3 style="text-align: center">Errore</h3>
