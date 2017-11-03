@@ -32,7 +32,6 @@ session_start();
         <input type="submit" class="menu" name = 'case' value="Sintesi">
         <br>
         <input type="submit" class="menu" name = 'case' value="Esporta Dati">
-        <input type="hidden" name='csrfToken' value='<?php echo($_SESSION['csrfToken']) ?>'>
     </form>
 </div>
 

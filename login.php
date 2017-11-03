@@ -22,10 +22,7 @@ if (isset($_POST['submit'])>0) {
                         session_start();
                         $_SESSION['username'] = $db_user;
                         $_SESSION['type'] = $db_type;
-
-                        $randomtoken = base64_encode( openssl_random_pseudo_bytes(32));
-                        $_SESSION['csrfToken']=$randomtoken;
-
+                        
                         if ($_SESSION['type'] === 'admin') {
                             header('location: iot_menu.php');
                         } else if ($_SESSION['type'] === 'user') {
