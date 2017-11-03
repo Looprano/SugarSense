@@ -17,7 +17,7 @@
 
 <div>
     <?php
-    echo $errore;
+    echo $_GET['errore'];
     ?>
 </div>
 

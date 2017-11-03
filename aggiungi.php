@@ -24,7 +24,7 @@ if($count === 0){
 <h3>L'username è già in uso</h3>
 HTML;
 
-    header('location:Errore.php?parametro='.$errore);
+    header('location:Errore.php?parametro={$errore}');
 
 }
 
