@@ -1,11 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Francesca
- * Date: 02/11/17
- * Time: 10:19
- */
-
+session_start();
+if(!isset($_SESSION['username']))
+    header('Location:index.php');
 ?>
 
 <!doctype html>

@@ -22,7 +22,7 @@ if (isset($_POST['submit'])>0) {
                         session_start();
                         $_SESSION['username'] = $db_user;
                         $_SESSION['type'] = $db_type;
-                        
+
                         if ($_SESSION['type'] === 'admin') {
                             header('location: iot_menu.php');
                         } else if ($_SESSION['type'] === 'user') {
