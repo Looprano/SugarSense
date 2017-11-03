@@ -1,5 +1,5 @@
 <?php
-session_start();
+include 'core.php';
 if(!isset($_SESSION['username']))
     header('Location:index.php');
 ?>
@@ -7,6 +7,7 @@ if(!isset($_SESSION['username']))
 <!doctype html>
 <html>
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SugarSense</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -34,7 +35,7 @@ if(!isset($_SESSION['username']))
     </thead>
 
         <?php
-        include 'core.php';
+
 
         $user = addslashes($_SESSION['username']);
         $sql =("SELECT id_imp, indirizzo from utente_impianti INNER JOIN impianto where utente_impianti.username_utente ='$user' AND utente_impianti.id_imp_utente = impianto.id_imp");

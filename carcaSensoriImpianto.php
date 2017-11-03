@@ -1,5 +1,5 @@
 <?php
-session_start();
+include 'core.php';
 if(!isset($_SESSION['username']))
     header('Location:index.php');
 ?>
@@ -36,9 +36,8 @@ if(!isset($_SESSION['username']))
 
 
         <?php
-        include 'core.php';
+
         $idImpianto=  htmlspecialchars($_GET['id']);
-        echo "Impianto: $idImpianto";
 
         $sql =sprintf("SELECT sensore.id_sens,valore,descrizione FROM (sensore inner join impianti_sensori on impianti_sensori.id_imp = '%d' and impianti_sensori.id_sens = sensore.id_sens)",$idImpianto);
 
