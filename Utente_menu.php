@@ -1,3 +1,9 @@
+<?php
+session_start();
+    if(!isset($_SESSION['username']))
+        header('Location:index.php');
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -26,11 +32,12 @@
         <input type="submit" class="menu" name = 'case' value="Sintesi">
         <br>
         <input type="submit" class="menu" name = 'case' value="Esporta Dati">
+        <input type="hidden" name='csrfToken' value='<?php echo($_SESSION['csrfToken']) ?>'>
     </form>
 </div>
 
 <footer>
-    <input type="button" class="logout" onclick="location.href='index.php'" >
+    <input type="button" class="logout" onclick="location.href='logout.php'">
 </footer>
 
 </body>

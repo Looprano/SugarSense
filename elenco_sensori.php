@@ -62,7 +62,7 @@ HTML;
         </table>
     </div>
         <footer>
-            <input type="button" class="logout" onclick="location.href='index.php'" >
+            <input type="button" class="logout" onclick="location.href='logout.php'" >
             <input type="button" class="home" onclick="location.href='Utente_menu.php'">
         </footer>
 

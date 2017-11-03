@@ -6,7 +6,7 @@ error_reporting(0);
 header('Content-Type: text/csv; charset=utf-8');
 header('Content-Disposition: attachment; filename=data.csv');
 
-$output = fopen("php://output", "w");
+$output = fopen('php://output', 'w');
 
 $user = addslashes($_SESSION['username']);
 $sql = ("SELECT id_imp, sensore.id_sens, valore, descrizione from(sensore INNER JOIN impianti_sensori on sensore.id_sens = impianti_sensori.id_sens) INNER JOIN utente_impianti ON impianti_sensori.id_imp= utente_impianti.id_imp_utente and utente_impianti.username_utente = '$user'");
@@ -22,7 +22,7 @@ if ($count !== 0) {
     }
 } else {
 
-    fputs($output, "Nessun sensore presente.");
+    fputs($output, 'Nessun sensore presente.');
 }
 
 fclose($output);
