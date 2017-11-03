@@ -17,7 +17,7 @@
 
 <div>
     <?php
-    echo $_GET['errore'];
+    echo $_GET['parametro'];
     ?>
 </div>
 
