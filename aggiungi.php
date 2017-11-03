@@ -22,7 +22,7 @@ if($count === 0){
 }else{
     $errore = 1;
 
-    header('location:Errore.php?parametro'.$errore);
+    header('location:Errore.php?parametro='.$errore);
 
 }
 

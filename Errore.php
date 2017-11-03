@@ -39,6 +39,10 @@ HTML;
             $error = <<<HTML
 <h3>Non esistono sensori con questo ID</h3>
 HTML;
+        case 6:
+            $error = <<<HTML
+<h3>Arco Temporale non corretto</h3>
+HTML;
 
 
 

@@ -18,6 +18,6 @@ if($count === 1){
 }else{
     $errore = 2;
 
-    header('location:Errore.php?parametro'.$errore);
+    header('location:Errore.php?parametro='.$errore);
 }
 
