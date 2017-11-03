@@ -17,7 +17,37 @@
 
 <div>
     <?php
-    echo $_GET['errore'];
+
+    switch (parametro){
+        case 1:
+            $error = <<<HTML
+<h3>L'username è già in uso</h3>
+HTML;
+        case 2:
+            $error = <<<HTML
+<h3>L'username non esiste</h3>
+HTML;
+        case 3:
+            $error = <<<HTML
+<h3>Il database è vuoto</h3>
+HTML;
+        case 4:
+            $error = <<<HTML
+<h3>Non esistono sensori con questo tipo</h3>
+HTML;
+        case 5:
+            $error = <<<HTML
+<h3>Non esistono sensori con questo ID</h3>
+HTML;
+
+
+
+
+    }
+
+    echo $_GET[parametro];
+
+
     ?>
 </div>
 

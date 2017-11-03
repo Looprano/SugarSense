@@ -54,7 +54,9 @@ HTML;
                 echo htmlspecialchars_decode(htmlspecialchars($str));
             }
         }else {
-            header('location: Errore.php');
+            $errore = 2;
+
+            header('location:Errore.php?parametro'.$errore);
         }
         ?>
 
