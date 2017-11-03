@@ -19,7 +19,7 @@
 </head>
 
 
-<body background="errori.jpg">
+<body background="nature-fields-grass-flower-blur-photography.jpg">
 
 <h2>SUGARSENSE</h2>
 

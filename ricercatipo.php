@@ -60,6 +60,12 @@ HTML;
         }else{
 
             header('location: Errore.php');
+
+            $stringa = <<<HTML
+<h3>Il tipo non esiste</h3>
+HTML;
+
+            echo $stringa;
         }
 
         ?>

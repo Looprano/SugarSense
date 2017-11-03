@@ -10,7 +10,7 @@ if($count === 1){
 
     header('location: elencoUtenti.php');
 
-    $sql1=("DELETE FROM `login` WHERE username = '$username''");
+    $sql1=("DELETE FROM `login` WHERE username = '$username'");
     $query1 = mysqli_query($conn,$sql1); //questa va lasciata!!!!!!
 
 
@@ -19,4 +19,3 @@ if($count === 1){
     header('location: Errore.php');
 }
 
-?>
