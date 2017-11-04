@@ -60,7 +60,7 @@ if(!isset($_SESSION['username']))
                 </tr>
 
 HTML;
-                echo htmlspecialchars($str);
+                echo htmlspecialchars_decode(htmlspecialchars($str));
             }
         }else{
             $errore = 5;
