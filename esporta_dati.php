@@ -26,15 +26,15 @@ if ($count !== 0) {
         $num++;
     }
 
-   // fputcsv($output, array('ID Impianto', 'ID Sensore', 'Rilevazione', 'Descrizione'));
+   fputcsv($output, array('ID Impianto', 'ID Sensore', 'Rilevazione', 'Descrizione'));
 
     foreach($sens as $sensore) {
-       // fputcsv($output, $sensore);
+       fputcsv($output, $sensore);
     }
 
 } else {
 
-    //fputs($output, 'Nessun sensore presente.');
+    fputs($output, 'Nessun sensore presente.');
 }
 
 
