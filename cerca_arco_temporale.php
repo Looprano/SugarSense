@@ -35,7 +35,7 @@
         $inizio = addslashes($_POST['inizio_data']);
         $fine = addslashes($_POST['fine_data']);
 
-        $sql =("SELECT valore from (sensore inner JOIN impianti_sensori on impianti_sensori.id_imp=$impianto and impianti_sensori.id_sens='$sensore' and substring(valore,1,8) BETWEEN '$inizio' and '$fine');
+        $sql =("SELECT valore from (sensore inner JOIN impianti_sensori on impianti_sensori.id_imp=$impianto and impianti_sensori.id_sens='$sensore' and impianti_sensori.id_sens = sensore.id_sens and substring(valore,1,8) BETWEEN '$inizio' and '$fine');
 ");
         $query = mysqli_query($conn,$sql);
         $count = mysqli_num_rows($query);
