@@ -1,7 +1,13 @@
+<?php
+include 'core.php';
+if(!isset($_SESSION['username']))
+    header('Location:index.php');
+?>
 
 <!doctype html>
 <html>
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SugarSense</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -18,8 +24,6 @@
     <div align="center">
 
 	<table class="tabellabackground">
-   <caption class="testoIntestazione">
-    </caption>
 
     <thead class="tabellaIntestazione">
         <tr>
@@ -31,7 +35,6 @@
     </thead>
 
         <?php
-        include 'core.php';
         $sql =('SELECT nome,cognome,codicefisc,username,type FROM login');
         $query = mysqli_query($conn,$sql);
         $count = mysqli_num_rows($query);
@@ -54,9 +57,9 @@ HTML;
                 echo $str;
             }
         }else {
-            $errore = 3;
+            $errore = '3' ;
 
-            header('location:Errore.php?parametro'.$errore);
+            header('location:Errore.php?parametro='.$errore);
         }
         ?>
 
@@ -65,7 +68,7 @@ HTML;
 	</div>
 
     <footer>
-        <input type="button" class="logout" onclick="location.href='index.php'" >
+        <input type="button" class="logout" onclick="location.href='logout.php'" >
         <input type="button" class="home" onclick="location.href='iot_menu.php'">
     </footer>
 

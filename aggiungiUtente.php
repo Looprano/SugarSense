@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['username']))
+    header('Location:index.php');
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -25,14 +31,14 @@
         <br>
         <input type="text" class="registrazione" name = 'Username' placeholder="Username">
         <br>
-        <input type="text" class="registrazione" name = 'Password' placeholder="Password">
+        <input type="password" class="registrazione" name = 'Password' placeholder="Password">
         <br>
         <input type="submit" class="invio" value="Aggiungi">
     </form>
 </div>
 
 <footer>
-    <input type="button" class="logout" onclick="location.href='index.php'" >
+    <input type="button" class="logout" onclick="location.href='logout.php'">
     <input type="button" class="home" onclick="location.href='iot_menu.php'">
 </footer>
 

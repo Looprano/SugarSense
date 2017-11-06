@@ -1,3 +1,9 @@
+<?php
+include 'core.php';
+if(!isset($_SESSION['username']))
+    header('Location:index.php');
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -30,9 +36,8 @@
 
 
         <?php
-        include 'core.php';
+
         $idImpianto=  htmlspecialchars($_GET['id']);
-        echo "Impianto: $idImpianto";
 
         $sql =sprintf("SELECT sensore.id_sens,valore,descrizione FROM (sensore inner join impianti_sensori on impianti_sensori.id_imp = '%d' and impianti_sensori.id_sens = sensore.id_sens)",$idImpianto);
 
@@ -63,7 +68,7 @@ HTML;
     </table>
 </div>
 <footer>
-    <input type="button" class="logout" onclick="location.href='index.php'" >
+    <input type="button" class="logout" onclick="location.href='logout.php'">
     <input type="button" class="home" onclick="location.href='Utente_menu.php'">
 </footer>
 
