@@ -14,9 +14,8 @@ $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 
 if ($count !== 0) {
-
-    $intestazione = array('ID Impianto', 'ID Sensore', 'Rilevazione', 'Descrizione');
-    fputcsv($output, addslashes($intestazione));
+    
+    fputcsv($output, array('ID Impianto', 'ID Sensore', 'Rilevazione', 'Descrizione'));
     while ($row = mysqli_fetch_assoc($query)) {
         fputcsv($output, $row);
     }
