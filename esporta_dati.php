@@ -13,8 +13,8 @@ $sql = ("SELECT id_imp, sensore.id_sens, valore, descrizione from(sensore INNER 
 $query = mysqli_query($conn,$sql);
 $count = mysqli_num_rows($query);
 
-if ($count !== 0) {
-    
+/*if ($count !== 0) {
+
     fputcsv($output, array('ID Impianto', 'ID Sensore', 'Rilevazione', 'Descrizione'));
     while ($row = mysqli_fetch_assoc($query)) {
         fputcsv($output, $row);
@@ -22,8 +22,25 @@ if ($count !== 0) {
 } else {
 
     fputs($output, 'Nessun sensore presente.');
+}*/
+
+// Escape text fields that may contain injected expressions
+$num = 0;
+$escape_pat = '/\s*([=+\-@])(.+)/';
+$replace = '\'$1$2';
+while ($row = mysqli_fetch_assoc($query)) {
+    $sens[$num]['ID Impianto'] = intval($row['id_imp']);
+    $sens[$num]['ID Sensore'] = preg_replace($escape_pat, $replace, $row['id_sens']);
+    $sens[$num]['Rilevazione'] = preg_replace($escape_pat, $replace, $row['valore']);
+    $sens[$num]['Descrizione'] = preg_replace($escape_pat, $replace, $row['descrizione']);
+    $num++;
+}
+
+fputcsv($output, array('ID Impianto', 'ID Sensore', 'Rilevazione', 'Descrizione'));
+
+foreach($sens as $sensore) {
+    fputcsv($output, $sensore); // FIXED
 }
 
 fclose($output);
-?>
 

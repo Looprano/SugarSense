@@ -58,7 +58,7 @@ HTML;
                 echo $str;
             }
         }else{
-            $errore = 3;
+            $errore = '3';
             header('location:Errore.php?parametro='.$errore);
         }
         ?>

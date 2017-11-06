@@ -59,7 +59,7 @@ HTML;
             }
         }else
         {
-            $errore = 6;
+            $errore = '6';
 
             header('location:Errore.php?parametro='.$errore);
         }

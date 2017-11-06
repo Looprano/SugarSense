@@ -61,7 +61,7 @@ HTML;
                 echo htmlspecialchars_decode(htmlspecialchars($str));
             }
         }else {
-            $errore = 2;
+            $errore = '2';
 
             header('location:Errore.php?parametro='.$errore);
         }
