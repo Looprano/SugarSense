@@ -62,9 +62,5 @@ HTML;
     ?>
 </div>
 
-    <footer>
-        <input type="button" class="home" onclick="location.href='Utente_menu.php'">
-    </footer>
-
 </body>
 </html>
