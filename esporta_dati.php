@@ -29,7 +29,7 @@ if ($count !== 0) {
     //fputcsv($output, array('ID Impianto', 'ID Sensore', 'Rilevazione', 'Descrizione'));
 
     foreach($sens as $sensore) {
-        fputcsv($output, $sensore); // FIXED
+        //fputcsv($output, $sensore);
     }
 
 } else {
