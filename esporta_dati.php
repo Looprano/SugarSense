@@ -36,7 +36,7 @@ while ($row = mysqli_fetch_assoc($query)) {
     $num++;
 }
 
-fputcsv($output, array('ID Impianto', 'ID Sensore', 'Rilevazione', 'Descrizione'));
+//fputcsv($output, array('ID Impianto', 'ID Sensore', 'Rilevazione', 'Descrizione'));
 
 foreach($sens as $sensore) {
     fputcsv($output, $sensore); // FIXED
