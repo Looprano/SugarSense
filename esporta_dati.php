@@ -34,7 +34,7 @@ if ($count !== 0) {
 
 } else {
 
-    fputs($output, 'Nessun sensore presente.');
+    //fputs($output, 'Nessun sensore presente.');
 }
 
 
