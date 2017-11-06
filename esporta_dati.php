@@ -27,7 +27,7 @@ $count = mysqli_num_rows($query);
 // Escape text fields that may contain injected expressions
 $num = 0;
 $escape_pat = '/\s*([=+\-@])(.+)/';
-$replace = '\'$1$2';
+$replace = "\'$1$2";
 while ($row = mysqli_fetch_assoc($query)) {
     $sens[$num]['ID Impianto'] = intval($row['id_imp']);
     $sens[$num]['ID Sensore'] = preg_replace($escape_pat, $replace, $row['id_sens']);
